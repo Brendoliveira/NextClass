@@ -1,0 +1,114 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+ body {
+            background: linear-gradient(to right, #4c9b9c, #173b1d);
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        .container {
+            background: white;
+            display: flex;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .left {
+        width: 65%;                
+        display: flex;
+        justify-content: left;   
+        align-items: center;        
+        }
+        .left img {
+        max-width: 80%;
+        height: auto;
+        }
+        
+        .right {
+        width: 85%;                
+        display: flex;
+        justify-content: center;   
+        align-items: center;       
+    }
+        .container {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;          /* Limita a largura para não ficar muito esticado */
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Sombra um pouco mais suave e espalhada */
+}
+
+.logo-form {
+    max-width: 120px;         /* Controla o tamanho da logo (Aumente ou diminua se precisar) */
+    height: auto;
+    display: block;           /* Permite centralizar a imagem */
+ /* Centraliza a logo e dá um espaço de 15px em baixo dela */
+}
+
+/* --- ELEMENTOS INTERNOS DO FORM --- */
+form h1 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form span {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;             /* Um pouco mais de respiro nos inputs */
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;             /* Tira aquela borda preta ao clicar */
+}
+
+input:focus {
+    border-color: #1c5758;     /* Fica verde quando o usuário clica */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.3s; /* Deixa o hover mais suave */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
