@@ -8,31 +8,70 @@
     <title>Login - NextClass</title>
 </head>
 <body>
+<div class="container">
+        <div class="form-image">
+            <img src="imagens/Chapeu.png" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se como aluno</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
 
-<div class="left">
-    <img src="imagens/ChatGPT Image 5 de mai. de 2026, 18_35_14.png" alt="imagem a esquerda" id="imagen-esqueda">
-</div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome completo</label>
+                        <input id="name" type="text" name="name" placeholder="Digite seu nome completo" required>
+                    </div>
 
-<div class="right">
-    
-    <main class="container" id="container>
+                    <div class="input-box">
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" type="number" name="cpf" placeholder="000.000.000-00" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
 
-        
-        <section class="form-container sing-in">
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
 
+                    <div class="input-box">
+                        <label for="nascimento">Data de nascimento</label>
+                        <input id="nascimento" type="date" name="nascimento" required>
+                    </div>
 
+                    <div class="input-box">
+                        <label for="endereco">Endereço</label>
+                        <input id="endereco" type="text" name="endereco" placeholder="Digite seu endereço" required>
+                    </div>
 
-            <form>
-                <h1>Entrar</h1>
-            <span>Area do estudante</span>
-                <input type="email" placeholder="Email" required id="email" >
-                <input type="password" placeholder="Senha" required id="senha" >
-                <a href="#">Esqueci a senha</a>
-                <button>Entrar</button>
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required>
+                    </div>
+
+                </div>
+
+                
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a> </button>
+                </div>
             </form>
-        </section>
-        </main>
-</div>
-
+        </div>
+    </div>
 </body>
 </html>
