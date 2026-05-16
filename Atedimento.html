@@ -6,6 +6,7 @@
     <link rel="shortcut icon" type="image/png" href="imagens/Black and White Modern Initials Creative Agency Logo.png">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="Css/navbar.css">
+    <link rel="stylesheet" href="Css/footer.css">
     <link rel="stylesheet" href="Css/atedimento.css">
     <title>Agedendamento de Atedimento - NextClass</title>
 </head>
@@ -20,7 +21,7 @@
           <a href="index.html">Inicio</a>
           <a href="#">Ver Cursos</a>
           <a href="#">Atividades</a>
-          <a href="Atedimento.html">Atedimento</a>
+          <a href="Atedimento.html">Atendimento</a>
         </div>
         <a href="login.html"><button class="log-in">Entrar</button></a>
       </div>
@@ -51,15 +52,132 @@
                 Solicite atendimentos acadêmicos de forma simples e rápida, acompanhando horários, confirmações e mensagens diretamente pela plataforma.
             </p>
 
-           <button>Agendar</button> <!--Aqui vai abri um miniPlayer para poder agenda o horario, data e o tipo do atedimento(Suporte, finaceiro e etc)-->
+           <!-- BOTÃO -->
+
+<!-- BOTÃO -->
+
+<button id="abrirModal">Agendar Atendimento</button>
+
+<!-- MODAL -->
+
+<div class="modal" id="modal">
+
+    <div class="modal-content">
+
+        <span class="fechar" id="fecharModal">&times;</span>
+
+        <!-- ETAPA 1 -->
+
+        <div class="etapa active" id="etapa1">
+
+            <h2>Agendar Atendimento</h2>
+
+            <label>Tipo de atendimento</label>
+
+            <select id="tipo">
+                <option>Suporte</option>
+                <option>Pagamento</option>
+                <option>Acadêmico</option>
+                <option>Financeiro</option>
+            </select>
+
+            <label>Data</label>
+            <input type="date" id="data">
+
+            <label>Horário</label>
+            <input type="time" id="hora" min="08:00" max="19:00">
+
+            <button id="proxima">Continuar</button>
+
+        </div>
+
+        <!-- ETAPA 2 -->
+
+        <div class="etapa" id="etapa2">
+
+            <h2>Informações do Usuário</h2>
+
+            <label>Nome completo</label>
+            <input type="text" placeholder="Nome completo">
+
+            <label>CPF</label>
+            <input type="number" placeholder="CPF">
+
+            <label>Data de Nascimento</label>
+            <input type="date">
+
+            <label>Email</label>
+            <input type="email" placeholder="Email">
+
+            <label>Telefone</label>
+            <input type="tel" placeholder="Telefone">
+
+            <button>Enviar Agendamento</button>
 
         </div>
 
     </div>
 
+</div>
+        
+
 </section>
 
 
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+
+            <h2>NextClass</h2>
+
+            <p>
+                Plataforma desenvolvida para facilitar
+                matrículas, gerenciamento acadêmico
+                e atendimento escolar online.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Navegação</h3>
+
+            <a href="index.html">Início</a>
+            <a href="#">Cursos</a>
+            <a href="#">Turmas</a>
+            <a href="login.html">Login</a>
+
+        </div>
+
+        <div class="footer-support">
+
+            <h3>Atendimento</h3>
+
+            <p>
+                Precisa de ajuda ou suporte acadêmico?
+            </p>
+
+            <a href="Atedimento.html">
+                <button>Solicitar Atendimento</button>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 NextClass - Todos os direitos reservados
+
+    </div>
+
+</footer>
+    
+
+<script src="Javascript/atedimento.js"></script>
 <script src="Javascript/navbar.js"></script>
 </body>
 </html>
