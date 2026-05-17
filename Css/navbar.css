@@ -29,6 +29,11 @@ button {
   cursor: pointer;
 }
 
+#nextclass{
+  width: 150px;
+  margin-top: 20px;
+}
+
 .navbar {
   position: fixed;
   top: 0;
